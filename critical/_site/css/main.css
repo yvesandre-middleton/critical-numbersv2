@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'KraftMono';
+    src: url('KraftMono.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: 'KraftMono', Fallback, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h2 {
+    letter-spacing: 6px;
+    margin-top: 0;
+}
+
+h3 {
+    letter-spacing: 2px;
+}
+
+.nav-title {
+    text-align: center;
+    height: 100px;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    font-size: 100px;
+}
+
+.nav-blurb {
+    text-align: center;
+    height: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 100px 75px;
+  font-size: 40px;
+  border-top: 1px solid black;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+    text-align: center;
+}
+
+.column-section {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.column-section2 {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+.column-section3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.column-section4 {
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tooltip {
+    position: relative;
+    border-bottom: 1px dotted black;
+  }
+  
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+bottom: 150%;
+right: 70%;
+margin-left: -60px;
+
+font-size: 15px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+.tooltip:hover .tooltiptext {
+visibility: visible;
+}
+
+/**
+.col-1-header {
+    text-align: center;
+}
+
+.col-1-section-1 {
+    text-align: left;
+}
+
+.col-1-section-2 {
+    text-align: right;
+}
+
+.col-1 {
+    width: 33.33%;
+    margin-left: 5%;
+    }
+
+.col-2 {width: 66.66%;}
+.col-3 {width: 100%;}
+
+**/
